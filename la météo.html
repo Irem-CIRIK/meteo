@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo</title>
+    <link rel="stylesheet" href="la météo.css">
+    <link rel="icon" href="meteo.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+   
+   <div class="container">
+        <h1>Météo du monde</h1>
+        <form>
+            <label for="city">Entrez une ville : </label>
+            <input type="text" name="city" id="city" required autocomplete="off">
+            <button type="submit">Rechercher</button>
+        </form>
+       
+        <div id="map"></div>
+        <div id="weather"></div>
+   </div> 
+
+
+<script src="la météo.js"></script>
+</body>
+</html>
+<!-- 776bfdde46c1e71ce0446dfc252dcd8 -->
